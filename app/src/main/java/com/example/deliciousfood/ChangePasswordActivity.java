@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class ChangePasswordActivity extends AppCompatActivity {
 
     TextView txtArrowBack;
+    EditText edtOldPass,edtNewPass,edtNewPassRePass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,9 @@ public class ChangePasswordActivity extends AppCompatActivity {
 
     private void initview() {
         txtArrowBack = findViewById(R.id.txtArrowBack);
+        edtOldPass = findViewById(R.id.edtOldPass);
+        edtNewPass = findViewById(R.id.edtNewPass);
+        edtNewPassRePass = findViewById(R.id.edtNewPassRePass);
 
         txtArrowBack.setOnClickListener(new View.OnClickListener() {
             @Override

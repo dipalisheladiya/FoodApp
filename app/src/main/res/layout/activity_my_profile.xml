@@ -9,15 +9,23 @@
     tools:context=".MyProfileActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
         android:layout_width="@dimen/_90sdp"
         android:layout_height="@dimen/_90sdp"
         android:layout_marginTop="@dimen/_30sdp"
         android:src="@drawable/profile_img" />
 
     <TextView
+        android:id="@+id/txtChangeProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Change Profile"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
         android:text="Neha Patel"
         android:textColor="@color/black"
         android:textSize="@dimen/_15sdp" />
